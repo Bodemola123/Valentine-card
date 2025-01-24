@@ -93,7 +93,7 @@ const ScratchToReveal = () => {
         </div>
       ) : (
         <>
-          <h2 className="text-xl text-center font-semibold text-pink-600 mb-4">
+          <h2 className="text-2xl text-center font-semibold text-pink-600 mb-4">
             Scratch to reveal your surprise! 🎉
           </h2>
           <canvas

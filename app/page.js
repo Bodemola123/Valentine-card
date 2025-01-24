@@ -16,7 +16,7 @@ const page = () => {
     setIsYesClicked(true);
     setTimeout(() => {
       // Redirect to WhatsApp after animation
-      window.location.href = "https://wa.me/08127565607?text=Yes%2C%20I%20will%20be%20your%20Valentine%20%F0%9F%92%96%F0%9F%8C%B9%F0%9F%A4%8D";
+      window.location.href = "https://wa.me/2348127565607?text=Yes%2C%20I%20will%20be%20your%20Valentine%20%F0%9F%98%98%F0%9F%92%9C%F0%9F%98%8D%F0%9F%98%98%F0%9F%98%98";
     }, 5000); // Adjust the time based on animation length
   };
 
