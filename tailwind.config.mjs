@@ -11,6 +11,17 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      animation: {
+        burst: "burst 1s ease-out infinite",
+        pulse: "pulse 1.5s infinite",
+      },
+      keyframes: {
+        burst: {
+          "0%": { transform: "scale(0)" },
+          "50%": { transform: "scale(1.5)" },
+          "100%": { transform: "scale(0)", opacity: "0" },
+        },
+      },
     },
   },
   plugins: [],

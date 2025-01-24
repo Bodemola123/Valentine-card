@@ -13,9 +13,26 @@
     --foreground: #ededed;
   }
 }
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Dancing Script', cursive;
 }
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+/* Hide scrollbar for Firefox */
+.scrollbar-hide {
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+/* Optional: Add smooth scroll behavior */
+.scroll-container {
+  overflow-y: auto; /* Allow vertical scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
