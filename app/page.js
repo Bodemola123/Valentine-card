@@ -64,7 +64,7 @@ const page = () => {
             />
             <div className="flex items-center justify-center">
               <div className="animate-pulse text-4xl text-red-600 flex flex-col">
-                <div className='flex flex-row gap-2'>
+                <div className='flex flex-row items-center justify-center gap-2'>
                   <FaHeart className="text-red-500" size={60} />
                   <FaGrinHearts className="text-red-500" size={60} />
                   <FaKissWinkHeart className="text-red-500" size={60} />
