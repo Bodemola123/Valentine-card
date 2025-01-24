@@ -39,7 +39,7 @@ const CountdownTimer = () => {
   });
 
   return (
-    <div className="text-center mt-2 bg-pink-50 py-8 px-5 rounded-lg shadow-lg max-w-[320px]">
+    <div className="text-center mt-2 bg-pink-50 py-8 px-5 rounded-lg shadow-lg max-w-[300px]">
       <h2 className="text-2xl font-semibold text-pink-600">
         Countdown to Valentine's Day 💕
       </h2>

@@ -12,15 +12,14 @@ const ScratchToReveal = () => {
     const scratchImage = new Image();
     scratchImage.src = "/Card.png"; // Replace with your image path
 
-    // Define consistent dimensions (same as video: Tailwind class w-80 and h-80)
-    const desiredSize = 320; // 80 * 4 (Tailwind 'w-80' is 320px)
+    const desiredSize = 300; // Set the desired size of the image and canvas
 
     // Set the canvas dimensions
     canvas.width = desiredSize;
     canvas.height = desiredSize;
 
     scratchImage.onload = () => {
-      // Draw the image to match the canvas dimensions
+      // Draw the image to match the canvas dimensions (resize to fit the canvas)
       ctx.drawImage(scratchImage, 0, 0, desiredSize, desiredSize);
     };
 
@@ -81,7 +80,7 @@ const ScratchToReveal = () => {
   return (
     <div className="flex flex-col items-center justify-center py-10">
       {isRevealed ? (
-        <div className="w-80 h-80 bg-black rounded-lg overflow-hidden">
+        <div className="w-[300px] h-[300px] bg-black rounded-lg overflow-hidden">
           <video
             className="w-full h-full object-cover"
             loop
@@ -99,7 +98,7 @@ const ScratchToReveal = () => {
           </h2>
           <canvas
             ref={canvasRef}
-            className="w-80 h-80 border rounded-lg shadow-lg"
+            className="w-[300px] h-[300px] border rounded-lg shadow-lg"
           />
         </>
       )}

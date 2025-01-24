@@ -28,7 +28,7 @@ const page = () => {
     <div className="flex flex-col overflow-y-auto items-center justify-center min-h-screen bg-gradient-to-r from-black via-black to-red-900 scrollbar-hide scroll-container font-dancingScript">
       <CountdownTimer />
 
-      <div className="text-center mt-4">
+      <div className="text-center mt-6">
         {/* Conditional content based on Yes or No click */}
         {!isYesClicked && !isNoClicked && (
           <>
